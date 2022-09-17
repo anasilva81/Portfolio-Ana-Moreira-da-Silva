@@ -1,14 +1,18 @@
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;*/
+body {
+  background-color: rgba(10, 10, 10, 0.2);
+}
+
 .homepage {
-  background-image: url("/images/background1.jpg");
+  background-image: url("/images/Background.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 450px;
 }
 
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: rgba(10, 10, 10, 0.5);
+  --secondary-color: rgba(10, 10, 10, 0.8);
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -26,7 +30,7 @@ h3 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   margin-top: 40px;
 }
 
@@ -48,15 +52,30 @@ p {
   text-align: center;
 }
 
+hr {
+  border-top: 3px dotted black;
+}
+
+.name {
+  color: white;
+}
 .job {
   color: white;
+  position: relative;
+  font-size: 44px;
+  top: 100px;
 }
 
 .adjective {
-  font-size: 22px;
+  color: white;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
-  top: 240px;
+  top: 100px;
+}
+
+.about-me-btn:hover {
+  color: black;
 }
 
 .navigation-links {
@@ -128,7 +147,7 @@ p {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   h1 {
     font-size: 40px;
     margin-top: 10px;
@@ -142,22 +161,19 @@ p {
     margin-top: 10px;
   }
 
-  .homepage {
-    background-image: none;
-    background-color: rgba(0, 0, 0, 0.219);
-    height: 900px;
+  .job {
+    font-size: 28px;
+    color: white;
   }
 
   .name {
-    color: white;
+    font-size: 40px;
   }
 
   .adjective {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    color: white;
-    text-shadow: black 1px 1px 2px 0.9;
     position: relative;
-    top: 140px;
+    top: 80px;
   }
 }
