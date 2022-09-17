@@ -1,5 +1,10 @@
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;*/
+.homepage {
+  background-image: url("/images/background1.jpg");
+  background-size: cover;
+  height: 100vh;
+}
 
 :root {
   --primary-color: #6c63ff;
@@ -8,19 +13,20 @@ font-family: 'Roboto', sans-serif;*/
 }
 
 body {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
   text-align: center;
   margin: 0;
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 80px;
   margin-top: 40px;
 }
 
@@ -40,6 +46,17 @@ p {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+}
+
+.job {
+  color: white;
+}
+
+.adjective {
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  top: 240px;
 }
 
 .navigation-links {
@@ -101,7 +118,7 @@ p {
   content: "";
   width: 0%;
   height: 2px;
-  background: rgb(0, 255, 213);
+  background: rgb(41, 43, 42);
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -109,4 +126,38 @@ p {
 
 .collapse ul li:hover::after {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  .homepage {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.219);
+    height: 900px;
+  }
+
+  .name {
+    color: white;
+  }
+
+  .adjective {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-shadow: black 1px 1px 2px 0.9;
+    position: relative;
+    top: 140px;
+  }
 }
