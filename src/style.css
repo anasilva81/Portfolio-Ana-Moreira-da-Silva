@@ -59,6 +59,7 @@ hr {
 .name {
   color: white;
 }
+
 .job {
   color: white;
   position: relative;
@@ -107,7 +108,9 @@ hr {
 }
 
 .primary-link {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
   max-width: 250px;
   border-radius: 4px;
   padding: 20px 15px;
