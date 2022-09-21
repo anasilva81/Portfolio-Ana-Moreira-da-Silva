@@ -7,7 +7,7 @@ body {
 .homepage {
   background-image: url("/images/Background.jpg");
   background-size: cover;
-  height: 450px;
+  height: 500px;
 }
 
 :root {
@@ -52,10 +52,6 @@ p {
   text-align: center;
 }
 
-hr {
-  border-top: 3px dotted black;
-}
-
 .name {
   color: white;
 }
@@ -90,7 +86,7 @@ hr {
 }
 
 .work {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .navigation-links {
@@ -110,7 +106,6 @@ hr {
 .primary-link {
   display: flex;
   justify-content: center;
-
   max-width: 250px;
   border-radius: 4px;
   padding: 20px 15px;
