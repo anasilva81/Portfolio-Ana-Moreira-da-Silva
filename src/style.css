@@ -1,7 +1,7 @@
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 body {
-  background-color: rgba(10, 10, 10, 0.2);
+  /* background-color: rgba(10, 10, 10, 0.2);*/
 }
 
 .homepage {
@@ -91,7 +91,7 @@ p {
 
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin-top: 10px;
   justify-content: center;
 }
 
@@ -160,6 +160,23 @@ p {
 .collapse ul li:hover::after {
   width: 100%;
 }
+.about-section {
+  margin-top: 100px;
+}
+.about-section h2 {
+  font-size: 28px;
+}
+
+.about-section col-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.about-section img {
+  max-width: 450px;
+  margin: 30px;
+  padding-left: 20px;
+}
 
 @media (max-width: 740px) {
   h1 {
@@ -200,5 +217,13 @@ p {
   .about-me-btn {
     display: flex;
     left: 20px;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+
+  .about-section img {
+    max-width: 300px;
   }
 }
