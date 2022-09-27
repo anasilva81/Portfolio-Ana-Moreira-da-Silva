@@ -275,4 +275,13 @@ hr {
   .about-section img {
     max-width: 300px;
   }
+
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    text-align: center;
+  }
 }
