@@ -163,6 +163,7 @@ hr {
 .collapse ul li:hover::after {
   width: 100%;
 }
+
 .about-section {
   margin-top: 100px;
 }
@@ -283,5 +284,11 @@ hr {
 
   .text {
     text-align: center;
+  }
+
+  .collapse ul li:hover::after {
+    position: relative;
+    right: 200px;
+    width: 100%;
   }
 }
