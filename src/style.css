@@ -339,6 +339,10 @@ footer p a {
     max-width: 300px;
   }
 
+  .airport {
+    margin-top: 20px;
+  }
+
   .contactInfo {
     display: flex;
     flex-direction: column;
