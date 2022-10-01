@@ -20,6 +20,15 @@ body {
   margin-top: 60px;
 }
 
+.navbar {
+  backdrop-filter: blur;
+  background-color: rgb(41, 136, 131);
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
 h1,
 h2,
 h3 {
@@ -55,6 +64,7 @@ p {
 hr {
   border: 2px dotted black;
 }
+
 .name {
   color: white;
 }
@@ -75,17 +85,9 @@ hr {
 }
 
 .about-me-btn {
-  color: white;
-  background-color: black;
-  border: 1px solid white;
   position: relative;
   top: 100px;
   left: 60px;
-}
-
-.about-me-btn:hover {
-  color: black;
-  background-color: white;
 }
 
 .work {
@@ -114,14 +116,14 @@ hr {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
+  background: rgb(41, 136, 131);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
-.secondary-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+.primary-link:hover {
+  color: black;
+  background-color: var(--primary-color);
 }
 
 .homepage-link {
@@ -182,6 +184,20 @@ hr {
   padding-left: 20px;
 }
 
+.about-page-technologies {
+  background: grey;
+  padding: 20px;
+}
+
+.about-icons i {
+  margin: 0 20px;
+  color: white;
+  background-color: rgb(41, 136, 131);
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
 .my-projects h3 {
   font-size: 20px;
   margin-top: 10px;
@@ -208,6 +224,7 @@ hr {
 }
 
 input[type="submit"] {
+  background-color: rgb(41, 136, 131);
   width: 100%;
   border: none;
   outline: none;
@@ -216,7 +233,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: white;
+  background-color: var(--primary-color);
   transition: var(--primary-color) 150ms ease-in-out;
 }
 
@@ -243,25 +260,37 @@ footer .email-link {
 }
 
 footer .email-link:hover {
-  color: var(--secondary-color);
+  color: rgb(41, 136, 131);
 }
 
 footer .social-links a {
   margin: 0 20px;
   color: white;
-  background-color: grey;
+  background-color: rgb(41, 136, 131);
   padding: 10px;
   font-size: 20px;
   border-radius: 10px;
 }
 
 footer .social-links a:hover {
-  color: grey;
-  background-color: white;
-  border: 1px solid grey;
+  background-color: grey;
+  border: 1px solid rgb(41, 136, 131);
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: rgb(41, 136, 131);
 }
 
 @media (max-width: 740px) {
+  .homepage {
+    height: 445px;
+  }
+
   h1 {
     font-size: 40px;
     margin-top: 10px;
@@ -285,10 +314,10 @@ footer .social-links a:hover {
   }
 
   .adjective {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     position: relative;
-    top: 80px;
+    top: 70px;
   }
 
   .primary-link {
